@@ -1,0 +1,40 @@
+{
+  "name": "carpetjs",
+  "description": "Conventions based soft layer on top of express and mongoose for smooth web api development.",
+  "version": "1.0.3",
+  "author": "Ruben Stolk <ruben.stolk@changer.nl>",
+  "contributors": [],
+  "license": "MIT",
+  "repository": "changer/carpet",
+  "homepage": "http://carpetjs.com/",
+  "keywords": [
+    "express",
+    "mongoose",
+    "web api",
+    "api"
+  ],
+  "dependencies": {
+    "callsite": "~1.0.0"
+  },
+  "devDependencies": {
+    "mocha": "~2.0.0",
+    "should": "~4.1.0",
+    "supertest": "~0.14.0",
+    "precommit-hook": "latest",
+    "jshint": "latest",
+    "jscs": "latest"
+  },
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "files": [
+    "LICENSE",
+    "README.md",
+    "HISTORY.md",
+    "index.js",
+    "lib/"
+  ],
+  "scripts": {
+    "test": "mocha --require test/config --reporter spec --bail --check-leaks test/"
+  }
+}

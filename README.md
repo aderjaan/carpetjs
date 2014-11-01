@@ -1,4 +1,4 @@
-carpet
+carpetjs
 ======
 
-Carpet - A conventions based soft layer on top of express and mongoose for smooth web api development.
+Carpet - Conventions based soft layer on top of express and mongoose for smooth web api development.

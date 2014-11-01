@@ -1,0 +1,49 @@
+{
+  "bitwise": false,
+  "immed": true,
+  "newcap": true,
+  "noarg": true,
+  "noempty": true,
+  "nonew": true,
+  "trailing": true,
+  "boss": true,
+  "eqnull": true,
+  "expr": true,
+  "globalstrict": true,
+  "laxbreak": true,
+  "loopfunc": true,
+  "sub": true,
+  "undef": true,
+  "eqeqeq": true,
+  "indent": 2,
+  "latedef": true,
+  "quotmark": "single",
+  "unused": true,
+  "maxparams": 7,
+  "maxdepth": 4,
+  "maxstatements": 100,
+  "maxlen": 100,
+  "curly": true,
+  "node": false,
+  "globals": {
+
+    // Node
+    "module": true,
+    "require": true,
+    "exports": true,
+    "process": true,
+    "__dirname": true,
+    "global": true,
+    "Buffer": true,
+
+    "escape": true,
+    "unescape": true,
+
+    // Testing stuff
+    "should": true,
+    "describe": true,
+    "before": true,
+    "after": true,
+    "it": true
+  }
+}
