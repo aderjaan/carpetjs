@@ -21,7 +21,7 @@
   "unused": true,
   "maxparams": 7,
   "maxdepth": 4,
-  "maxstatements": 100,
+  "maxstatements": 120,
   "maxlen": 100,
   "curly": true,
   "node": false,
@@ -35,14 +35,32 @@
     "__dirname": true,
     "global": true,
     "Buffer": true,
+    "setTimeout": true,
 
     "escape": true,
     "unescape": true,
 
+    // App
+    "config": true,
+    "logging": true,
+    "utils": true,
+    "Cache": true,
+
+    // Libraries
+    "mongoose": true, // mongoose
+    "$": true,        // carpetjs.bootstrap
+    "_": true,        // lodash
+    "async": true,    // async.js
+
     // Testing stuff
+    "casper": true,
+    "window": true,
+    "document": true,
+    "test": true,
     "should": true,
     "describe": true,
     "before": true,
+    "beforeEach": true,
     "after": true,
     "it": true
   }
