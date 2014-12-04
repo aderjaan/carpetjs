@@ -7,7 +7,6 @@ var requireNoCache = function (module) {
 
 module.exports = {
   bootstrap: require('./lib/bootstrap'),
-  router: require('./lib/router'),
   migrations: require('./lib/migrations'),
   config: function () {
     requireNoCache('./lib/config');
