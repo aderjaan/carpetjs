@@ -11,7 +11,10 @@ module.exports = {
   config: function () {
     requireNoCache('./lib/config');
   },
+  server: function () {
+    return requireNoCache('./lib/server');
+  },
   express: function () {
-    return requireNoCache('./lib/express');
+    return requireNoCache('./lib/server');
   }
 };
