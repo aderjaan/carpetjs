@@ -1,7 +1,7 @@
 {
   "name": "carpetjs",
   "description": "Conventions based soft layer on top of express and mongoose for smooth web api development.",
-  "version": "1.2.18",
+  "version": "1.2.19",
   "author": "Ruben Stolk <ruben.stolk@changer.nl>",
   "contributors": [],
   "license": "MIT",
