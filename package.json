@@ -30,7 +30,6 @@
     "newrelic": "1.14.7",
     "node-cache": "~1.1.0",
     "swig": "~1.4.2",
-    "toobusy": "~0.2.4",
     "raven": "~0.7.2",
     "winston": "~0.8.3",
     "dox": "~0.6.1"
