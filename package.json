@@ -32,7 +32,7 @@
   },
   "optionalDependencies": {
     "newrelic": "1.14.7",
-    "toobusy": "~0.2.4",
+    "toobusy": "~0.2.4"
   },
   "engines": {
     "node": ">= 0.10.0"
