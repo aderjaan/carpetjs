@@ -25,12 +25,14 @@
     "mongoose": "~3.8.21",
     "mongoose-migrate": "~0.2.2",
     "mongoose-nested-set": "~0.0.6",
-    "newrelic": "1.14.7",
     "node-cache": "~1.1.0",
     "raven": "~0.7.2",
     "swig": "~1.4.2",
-    "toobusy": "~0.2.4",
     "winston": "~0.8.3"
+  },
+  "optionalDependencies": {
+    "newrelic": "1.14.7",
+    "toobusy": "~0.2.4",
   },
   "engines": {
     "node": ">= 0.10.0"
