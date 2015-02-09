@@ -1,7 +1,7 @@
 'use strict';
 
 var $ = module.exports = {
-  require: function (module, reload) {
+  require: function (module) {
     return require('./lib/'.concat(module));
   },
   extendLocal: function (module) {
@@ -18,7 +18,7 @@ var $ = module.exports = {
     $.mongoose = $.require('mongoose');
     $.extendLocal('config');
   },
-  server: function() {
+  server: function () {
     return $.require('server');
   }
 };
