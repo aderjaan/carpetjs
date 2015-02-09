@@ -1,7 +1,7 @@
 {
   "name": "carpetjs",
   "description": "Conventions based soft layer on top of express and mongoose for smooth web api development.",
-  "version": "1.6.0",
+  "version": "1.6.1",
   "author": {
     "name": "Ruben Stolk",
     "email": "ruben.stolk@changer.nl"
@@ -46,5 +46,13 @@
   ],
   "scripts": {
     "test": "mocha --require test/config --reporter spec --bail --check-leaks test/"
-  }
+  },
+  "readme": "# carpetjs\n\nCarpetJS - Conventions based soft layer on top of express and mongoose for smooth web api development.\n\nDocumentation following soon.\n\n# Major TODO's:\n\n- Write unit tests\n- Make things more configurable, eg.:\n  - enable/disable certain express options\n  - enable/disable certain configuration settings\n- ...\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": "https://github.com/changer/carpetjs/issues"
+  },
+  "_id": "carpetjs@1.6.0",
+  "_shasum": "04fcd7c147ef71abf24589fe81c2316fbe7468ec",
+  "_from": "carpetjs@~1.6.0"
 }
