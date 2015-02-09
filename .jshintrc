@@ -36,21 +36,8 @@
     "global": true,
     "Buffer": true,
     "setTimeout": true,
-
     "escape": true,
     "unescape": true,
-
-    // App
-    "config": true,
-    "logging": true,
-    "utils": true,
-    "Cache": true,
-
-    // Libraries
-    "mongoose": true, // mongoose
-    "$": true,        // carpetjs.bootstrap
-    "_": true,        // lodash
-    "async": true,    // async.js
 
     // Testing stuff
     "casper": true,

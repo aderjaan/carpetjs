@@ -5,12 +5,5 @@
   "NODE_ENV": "development",
   "HTTPS": false,
   "NEW_RELIC_ENABLED": false,
-  "AWS_KEY": "*****",
-  "AWS_SECRET": "*****",
-  "AWS_SQS_ID": "*****",
-  "AWS_REGION": "eu-west-1",
-  "AWS_URL_EXPIRY": 60,
-  "SENDGRID_USERNAME": "*****",
-  "SENDGRID_PASSWORD": "*****",
   "FAVICON": "http://www.changer.nl/favicon.ico"
 }

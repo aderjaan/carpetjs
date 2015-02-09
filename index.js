@@ -1,20 +1,32 @@
 'use strict';
 
-var requireNoCache = function (module) {
-  delete require.cache[require.resolve(module)];
-  return require(module);
-};
-
-module.exports = {
-  bootstrap: require('./lib/bootstrap'),
-  migrations: require('./lib/migrations'),
-  config: function () {
-    requireNoCache('./lib/config');
+var $ = module.exports = {
+  require: function (module, reload) {
+    return require('./lib/'.concat(module));
   },
-  server: function () {
-    return requireNoCache('./lib/server');
+  extendLocal: function (module) {
+    try {
+      $.utils.extend($[module], $.bootstrap.bootstrap(process.cwd().concat('/', module)));
+    } catch (ex) {
+      global.console.trace(ex);
+    }
   },
-  express: function () {
-    return requireNoCache('./lib/server');
+  loadConfig: function () {
+    delete require.cache[require.resolve('./lib/config')];
+    delete require.cache[require.resolve(process.cwd().concat('/config'))];
+    $.config = $.require('config');
+    $.mongoose = $.require('mongoose');
+    $.extendLocal('config');
+  },
+  server: function() {
+    return $.require('server');
   }
 };
+
+$.bootstrap = $.require('bootstrap');
+$.utils = $.bootstrap.bootstrap(__dirname.concat('/lib/utils'));
+
+$.loadConfig();
+$.extendLocal('utils');
+
+$.logging = $.require('logging');
