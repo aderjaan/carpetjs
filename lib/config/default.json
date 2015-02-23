@@ -5,5 +5,5 @@
   "NODE_ENV": "development",
   "HTTPS": false,
   "NEW_RELIC_ENABLED": false,
-  "FAVICON": "http://www.changer.nl/favicon.ico"
+  "STATICS": "http://www.changer.nl/"
 }
