@@ -1,7 +1,7 @@
 {
   "name": "carpetjs",
   "description": "Conventions based soft layer on top of express and mongoose for smooth web api development.",
-  "version": "1.8.0",
+  "version": "1.8.1",
   "author": {
     "name": "Ruben Stolk",
     "email": "ruben.stolk@changer.nl"
@@ -50,8 +50,5 @@
   "readmeFilename": "README.md",
   "bugs": {
     "url": "https://github.com/changer/carpetjs/issues"
-  },
-  "_id": "carpetjs@1.6.0",
-  "_shasum": "04fcd7c147ef71abf24589fe81c2316fbe7468ec",
-  "_from": "carpetjs@~1.6.0"
+  }
 }
