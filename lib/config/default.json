@@ -5,5 +5,6 @@
   "NODE_ENV": "development",
   "HTTPS": false,
   "NEW_RELIC_ENABLED": false,
-  "STATICS": "http://www.changer.nl/"
+  "STATICS": "http://www.changer.nl/",
+  "REQUEST_LIMIT": "1mb"
 }
