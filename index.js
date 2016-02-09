@@ -30,3 +30,5 @@ $.loadConfig();
 $.extendLocal('utils');
 
 $.logging = $.require('logging');
+
+$.bootstrap.models();
