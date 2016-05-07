@@ -6,7 +6,7 @@ var $ = module.exports = {
   },
   extendLocal: function (module) {
     try {
-      $.utils.extend($[module], $.bootstrap.bootstrap(process.cwd().concat('/', module)));
+      Object.assign($[module], $.bootstrap.bootstrap(process.cwd().concat('/', module)));
     } catch (ex) {
       global.console.trace(ex);
     }
