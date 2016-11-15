@@ -1,7 +1,7 @@
 {
   "name": "carpetjs",
   "description": "Conventions based soft layer on top of express and mongoose for smooth web api development.",
-  "version": "1.25.0",
+  "version": "1.25.1",
   "author": {
     "name": "Ruben Stolk",
     "email": "ruben.stolk@safetychanger.com"
@@ -21,6 +21,8 @@
   ],
   "dependencies": {
     "body-parser": "1.15.2",
+    "cache-manager": "2.2.0",
+    "cache-manager-redis": "0.3.1",
     "callsite": "1.0.0",
     "compression": "1.6.2",
     "express": "4.14.0",
@@ -28,7 +30,6 @@
     "method-override": "2.3.6",
     "mongoose": "4.6.6",
     "newrelic": "1.33.0",
-    "cache-manager": "2.2.0",
     "nunjucks": "3.0.0",
     "raven": "0.12.1",
     "winston": "1.1.2"

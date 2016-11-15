@@ -15,8 +15,10 @@ var $ = module.exports = {
     delete require.cache[require.resolve('./lib/config')];
     delete require.cache[require.resolve(process.cwd().concat('/config'))];
     $.config = $.require('config');
+    $.utils = $.bootstrap.bootstrap(__dirname.concat('/lib/utils'));
     $.mongoose = $.require('mongoose');
     $.extendLocal('config');
+    $.extendLocal('utils');
   },
   server: function () {
     return $.require('server');
@@ -24,10 +26,8 @@ var $ = module.exports = {
 };
 
 $.bootstrap = $.require('bootstrap');
-$.utils = $.bootstrap.bootstrap(__dirname.concat('/lib/utils'));
 
 $.loadConfig();
-$.extendLocal('utils');
 
 $.logging = $.require('logging');
 
