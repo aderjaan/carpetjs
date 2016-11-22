@@ -1,17 +1,16 @@
-'use strict';
-
-var $ = module.exports = {
-  require: function (module) {
+const $ = module.exports = {
+  require (module) {
     return require('./lib/'.concat(module));
   },
-  extendLocal: function (module) {
+  extendLocal (module) {
     try {
       Object.assign($[module], $.bootstrap.bootstrap(process.cwd().concat('/', module)));
-    } catch (ex) {
+    }
+    catch (ex) {
       global.console.trace(ex);
     }
   },
-  loadConfig: function () {
+  loadConfig () {
     delete require.cache[require.resolve('./lib/config')];
     delete require.cache[require.resolve(process.cwd().concat('/config'))];
     $.config = $.require('config');
@@ -20,7 +19,7 @@ var $ = module.exports = {
     $.extendLocal('config');
     $.extendLocal('utils');
   },
-  server: function () {
+  server () {
     return $.require('server');
   }
 };

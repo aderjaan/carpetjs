@@ -1,7 +1,7 @@
 {
   "name": "carpetjs",
   "description": "Conventions based soft layer on top of express and mongoose for smooth web api development.",
-  "version": "1.26.11",
+  "version": "2.0.0",
   "author": {
     "name": "Ruben Stolk",
     "email": "ruben.stolk@safetychanger.com"
@@ -22,18 +22,22 @@
   "dependencies": {
     "body-parser": "1.15.2",
     "cache-manager": "2.2.0",
-    "cache-manager-redis": "0.3.1",
+    "cache-manager-redis": "0.3.2",
     "callsite": "1.0.0",
     "compression": "1.6.2",
     "express": "4.14.0",
     "express-winston": "0.4.1",
-    "method-override": "2.3.6",
-    "mongoose": "4.6.6",
-    "newrelic": "1.33.0",
+    "method-override": "2.3.7",
+    "mongoose": "4.6.8",
+    "newrelic": "1.34.0",
     "nunjucks": "3.0.0",
     "object-hash": "1.1.5",
-    "raven": "0.12.1",
+    "raven": "0.12.3",
     "winston": "1.1.2"
+  },
+  "devDependencies": {
+    "supertest": "latest",
+    "should": "latest"
   },
   "engines": {
     "node": "5.x",
@@ -47,7 +51,8 @@
     "lib/"
   ],
   "scripts": {
-    "test": "mocha --require test/config --reporter spec --bail --check-leaks test/"
+    "test": "mocha --require test/config --reporter spec --bail --check-leaks test/",
+    "lint": "./node_modules/eslint/bin/eslint.js ."
   },
   "readme": "# carpetjs\n\nCarpetJS - Conventions based soft layer on top of express and mongoose for smooth web api development.\n\nDocumentation following soon.\n\n# Major TODO's:\n\n- Write unit tests\n- Make things more configurable, eg.:\n  - enable/disable certain express options\n  - enable/disable certain configuration settings\n- ...\n",
   "readmeFilename": "README.md",

@@ -1,16 +1,16 @@
-'use strict';
+const $ = require('../');
+const should = require('should');
+const request = require('supertest');
 
-var carpet = require('../');
-var should = require('should');
-var request = require('supertest');
+describe('carpet.all', () => {
+  it('should work', done => {
+    should.exist($.bootstrap);
+    should.exist($.router);
 
-describe('carpet.all', function () {
-  it('should work', function (done) {
-    should.exist(carpet.bootstrap);
-    should.exist(carpet.router);
-    if (false) {
+    if ($ === false) {
       request();
     }
+
     done();
   });
 });
