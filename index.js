@@ -20,7 +20,21 @@ const $ = module.exports = {
     $.extendLocal('utils');
   },
   server () {
-    return $.require('server');
+    const run = () => $.require('server');
+
+    // Inject sentry
+    if ($.config.sentry_dsn) {
+      $.sentry = require('raven');
+      $.sentry.config($.config.sentry_dsn, $.config.sentry_config).install();
+      return $.sentry.context(run);
+    }
+
+    process.on('uncaughtException', err => {
+      global.console.error('Uncaught exception', err);
+      global.console.trace(err.stack);
+    });
+
+    return run();
   }
 };
 
