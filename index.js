@@ -14,8 +14,8 @@ const $ = module.exports = {
     delete require.cache[require.resolve('./lib/config')];
     delete require.cache[require.resolve(process.cwd().concat('/config'))];
     $.config = $.require('config');
-    $.utils = $.bootstrap.bootstrap(__dirname.concat('/lib/utils'));
     $.mongoose = $.require('mongoose');
+    $.utils = $.bootstrap.bootstrap(__dirname.concat('/lib/utils'));
     $.extendLocal('config');
     $.extendLocal('utils');
   },
