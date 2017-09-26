@@ -27,11 +27,6 @@ const $ = module.exports = {
       return $.sentry.context(run);
     }
 
-    process.on('uncaughtException', err => {
-      global.console.error('Uncaught exception', err);
-      global.console.trace(err.stack);
-    });
-
     return run();
   }
 };
