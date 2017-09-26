@@ -23,9 +23,7 @@ const $ = module.exports = {
     const run = () => $.require('server');
 
     // Inject sentry
-    if ($.config.sentry_dsn) {
-      $.sentry = require('raven');
-      $.sentry.config($.config.sentry_dsn, $.config.sentry_config).install();
+    if ($.sentry) {
       return $.sentry.context(run);
     }
 
