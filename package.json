@@ -1,7 +1,7 @@
 {
   "name": "carpetjs",
   "description": "Conventions based soft layer on top of express and mongoose for smooth web api development.",
-  "version": "2.5.5",
+  "version": "2.5.7",
   "author": {
     "name": "Ruben Stolk",
     "email": "ruben.stolk@safetychanger.com"
@@ -28,7 +28,7 @@
     "express": "4.15.5",
     "express-winston": "0.4.1",
     "method-override": "2.3.9",
-    "mongoose": "4.11.13",
+    "mongoose": "4.9.0",
     "newrelic": "2.2.1",
     "nunjucks": "3.0.1",
     "object-hash": "1.1.8",
